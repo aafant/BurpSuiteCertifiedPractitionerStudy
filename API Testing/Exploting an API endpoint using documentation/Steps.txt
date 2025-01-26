@@ -1,0 +1,13 @@
+1) Open burp, go to the lab page, the shop/home page and add /api, to find APIs, we can see three APIS, make sure you're logged into the user provided for the lab wiener:peter
+
+Verb	Endpoint	Parameters	Response
+GET	/user/[username: String]	{ }	200 OK, User
+DELETE	/user/[username: String]	{ }	200 OK, Result
+PATCH	/user/[username: String]	{"email": String}	200 OK, User
+
+
+2) Take the URL and call the API to delete the user carlos
+
+E.G.:
+
+https://0a7600f90460312a8114d4820062002b.web-security-academy.net/api/DELETE/user/carlos
